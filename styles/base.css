@@ -1,0 +1,188 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ede9e3;
+    --secondary-color: #e7d7c9;
+    --accent1-color: #3a2d28;
+    --accent2-color: #cdc6c3;
+    --accent3-color: #a38f85;
+    --heading-font: "Raleway", serif;
+    --text-font: "Inter", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+}
+
+body {
+    font-family: var(--text-font);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*
+================
+Header Section
+================
+*/
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav h1 {
+    padding: 2rem;
+    background-color: var(--accent1-color);
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    background: var(--primary-color);
+    padding: 2rem;
+}
+
+nav ul li a {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 2px;
+}
+
+/*
+  ==============
+  Main Section
+  ==============
+*/
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+    justify-items: center;
+}
+
+main .card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 20px;
+}
+
+main .card h3 {
+    background: var(--accent2-color);
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Profile Section */
+main .card .profile {
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+main .card .profile p {
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+main .card .profile img {
+    border-radius: 20px;
+}
+
+/* Country Section */
+main .card .country {
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+main .card .country small {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+main .card .location__place {
+    width: 500px;
+    margin: 0 auto;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ccc;
+}
+
+main .card .country p {
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+/* Resource Section */
+main .card ul {
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+main .card ul li {
+    list-style-type: disc;
+}
+
+main .card ul li a {
+    color: #000;
+    border-bottom: 1px solid var(--accent1-color);
+}
+
+/*
+===========
+Footer Section
+===========
+*/
+footer {
+    padding: 2rem;
+    background-color: var(--accent1-color);
+    color: #fff;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 2rem;
+}
+
+footer p {
+    color: var(--secondary-color);
+    line-height: 30px;
+}
