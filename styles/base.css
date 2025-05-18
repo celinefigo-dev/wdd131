@@ -38,11 +38,7 @@ li {
     list-style-type: none;
 }
 
-/*
-================
-Header Section
-================
-*/
+
 nav {
     display: flex;
     flex-direction: column;
@@ -51,7 +47,7 @@ nav {
 nav h1 {
     padding: 2rem;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: #ffffff;
     font-size: 2.5rem;
     text-align: center;
 }
@@ -69,15 +65,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #b11d1d;
     padding-bottom: 2px;
 }
 
-/*
-  ==============
-  Main Section
-  ==============
-*/
 
 main {
     max-width: 1200px;
@@ -139,7 +130,7 @@ main .card .location__place {
     font-size: 2rem;
     text-align: center;
     padding-bottom: 5px;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #0e0b0b;
 }
 
 main .card .country p {
