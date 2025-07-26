@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #20201a;
+    --secondary-color: #907b60;
+    --accent1-color: #c1b6ae;
+    --accent2-color: #474130;
+    --accent3-color: #e9d9c7;
+    --heading-font: "Raleway", serif;
+    --text-font: "Inter", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+}
+
+body {
+    font-family: var(--text-font);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Header */
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav h2 {
+    padding: 2rem;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    background: var(--secondary-color);
+    padding: 2rem;
+}
+
+nav ul li a {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 2px;
+}
+
+
+/* Main Section */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 77.7vh;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+main article {
+    grid-column: 1 / 2;
+    padding: 2rem;
+    background: var(--accent1-color);
+}
+
+main aside {
+    grid-column: 2 / 3;
+    padding: 2rem;
+    background: var(--accent3-color);
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}

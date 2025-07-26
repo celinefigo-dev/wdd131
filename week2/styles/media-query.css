@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ede9e3;
+    --secondary-color: #e7d7c9;
+    --accent1-color: #3a2d28;
+    --accent2-color: #cdc6c3;
+    --accent3-color: #a38f85;
+    --text-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--text-font);
+}
+
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid var(--accent3-color);
+    padding: 1rem;
+    background: var(--accent2-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background: var(--primary-color);
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
