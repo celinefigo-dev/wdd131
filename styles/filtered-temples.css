@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ede9e3;
+    --secondary-color: #e7d7c9;
+    --accent1-color: #3a2d28;
+    --accent2-color: #cdc6c3;
+    --accent3-color: #a38f85;
+    --heading-font: "Raleway", serif;
+    --text-font: "Inter", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    font-display: swap;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    transition: transform 0.3s ease;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+body {
+    font-family: var(--text-font);
+    font-display: swap;
+}
+
+/*
+=========== 
+Header Section 
+=========== 
+*/
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul li a {
+    display: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul li a:hover {
+    background: var(--primary-color);
+    color: #000;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.open a {
+    display: flex;
+}
+
+/* 
+==============
+Main Section
+==============
+*/
+main {
+    background: var(--accent2-color);
+}
+
+main h2 {
+    margin: 10px 0;
+    text-align: center;
+    padding: 1rem 0;
+    background: var(--accent1-color);
+    color: #fff;
+}
+
+main h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main p {
+    margin-bottom: 10px;
+}
+
+.temple__card {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.temple__card figure {
+    padding: 10px;
+}
+
+/*
+=========== 
+Footer Section 
+=========== 
+*/
+footer {
+    padding: 2rem;
+    background-color: var(--accent1-color);
+    color: #fff;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 1rem;
+}
+
+footer p {
+    color: var(--secondary-color);
+    line-height: 30px;
+}

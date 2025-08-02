@@ -1,0 +1,59 @@
+@media screen and (min-width: 740px) {
+    header {
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    nav ul li a {
+        display: flex;
+        padding: 0;
+    }
+
+    nav ul li a:hover {
+        border-bottom: 2px solid #fff;
+        padding-bottom: 2px;
+        background: transparent;
+        color: #fff;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .temple__card {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        padding: 0 50px;
+        gap: 1rem;
+    }
+
+    main {
+        max-width: 1400px;
+        margin: 2rem auto;
+    }
+
+    main h2 {
+        margin: 1rem 0;
+        padding: 2rem 0;
+        font-size: 2.5rem;
+    }
+
+    main h3 {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    footer h3 {
+        font-size: 2rem;
+    }
+}
