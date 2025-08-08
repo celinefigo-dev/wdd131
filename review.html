@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Celine mafigu">
+    <meta name="description" content="WDD 131 Celine Mafigu's Confirmation Page">
+    <title>WDD 131 - Dynamic Web Fundamentals - Celine Mafigu</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <!-- Header / Top Bar -->
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <span class="icon">HG</span>
+            </div>
+            <h1>Product Review</h1>
+        </div>
+    </header>
+
+    <main class="confirmation-main">
+        <div class="confirmation-container">
+            <h2>Thank You for Your Review!</h2>
+            <p>You have submitted <span id="review-count"></span> review(s).</p>
+            <a href="form.html" class="back-link">Submit Another Review</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy;2025 Celine Mafigu - Zimbabwe <br />
+            Last Modification: <span id="last-modified"></span>
+        </p>
+    </footer>
+
+    <script>
+        const reviewCountKey = "reviewCount";
+        let count = localStorage.getItem(reviewCountKey) || 0;
+        count = parseInt(count) + 1;
+        localStorage.setItem(reviewCountKey, count);
+        document.getElementById("review-count").textContent = count;
+
+        // Display the last modification date/time in the footer
+        document.getElementById("last-modified").textContent =
+            document.lastModified;
+    </script>
+</body>
+
+</html>
