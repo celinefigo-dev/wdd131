@@ -1,0 +1,31 @@
+/* Desktop Styles */
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+    }
+
+    .hero-text {
+        flex: 1;
+        padding-right: 20px;
+    }
+
+    .hero img {
+        width: 50%;
+    }
+
+    .about {
+        display: flex;
+        align-items: center;
+    }
+
+    .about img {
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    form {
+        max-width: 400px;
+    }
+}

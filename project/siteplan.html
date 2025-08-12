@@ -3,36 +3,51 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clothe a Child Initiative</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Celine Mafigu" />
+    <meta name="description" content="WDD 131 Celine's Clothe a Child Initiative" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Celine's Clothe a Child Initiative</title>
     <link rel="stylesheet" href="styles/siteplan.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplana-large.css" />
+    <script src="scripts/siteplan.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 
 <body>
     <header>
         <h1>Clothe a Child Initiative</h1>
-        <p>Because every child deserves warmth, dignity, and love.</p>
+        <nav>
+        <img src="images/logo.webp" alt="Site Logo" class="logo">
+        <nav class="nav">
+            <div class="nav-brand"></div>
+            <button class="hamburger-btn"onclick="toggleMenu()">&#9776;</button> 
+            <ul class="nav-links" id="nav-links">
+                <li><a href="siteplan.html" target="_blank">Home</a></li>
+                <li><a href="about.html" target="_blank">About </a></li>
+                <li><a href="donate.html" target="_blank">Donate</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+            </ul>    
+        </nav>
     </header>
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-links").classList.toggle("show-menu");
+        };
+    </script>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#donate">Donate</a></li>
-            <li><a href="#volunteer">Volunteer</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <section class="hero">
+        <img src="images/hero.webp" alt="Children receiving clothes" loading="lazy" />
+        <h2>Give the Gift of Clothing</h2>
+        <p>Join us to help children in need feel dignity and comfort.</p>
+        <a href="donate.html" class="btn"> Donate Now</a>
+    </section>
 
-    <div class="hero" id="home">
-        <h1>Give the Gift of Clothing</h1>
-        <p>Join us in supporting children in need</p>
-        <a class="cta-button" href="#donate">Donate Clothes</a>
-        <a class="cta-button" href="#volunteer">Become a Volunteer</a>
-    </div>
-
-    <div class="section" id="about">
+        <div class="section" id="about">
         <h2>Our Mission</h2>
         <p>The Clothe a Child Initiative is a non-profit project dedicated to collecting and distributing new and
             preloved clothes to underprivileged children. We believe that every child deserves to feel confident, cared
@@ -60,9 +75,18 @@
             WhatsApp: +27 83 253 9518</p>
     </div>
 
-    <div class="footer">
-        <p>&copy; 2025 Clothe a Child Initiative. All rights reserved.</p>
-    </div>
+    <section class="wireframe-preview">
+        <h3>Website Wireframes</h3>
+        <div class="wireframe-images">
+            <img src="images/wireframe-mobile.png" alt="Mobile wireframe" loading="lazy" />
+            <img src="images/wireframe-desktop.png" alt="Desktop wireframe" loading="lazy" />
+        </div>
+    </section>
+
+    <footer>
+        <>&copy; 2025 Clothe a Child Initiative | South Africa</p>
+    </footer>
+
 </body>
 
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Donate - Clothe a Child Initiative</title>
+    <link rel="stylesheet" href="style/siteplan.css" />
+    <script src="scripts/siteplan.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>Clothe a Child Initiative</h1>
+        <nav>
+            <a href="siteplan.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="donate-section">
+            <h2>Make a Difference</h2>
+            <p>Your donation brings warmth and hope to a child’s life. Please fill out the form below.</p>
+            <form id="donationForm" novalidate>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your email address" />
+
+                <label for="amount">Donation Amount ($):</label>
+                <input type="number" id="amount" name="amount" min="1" required placeholder="Amount in USD" />
+
+                <button type="submit">Submit Donation</button>
+            </form>
+            <p id="thankYouMessage" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Clothe a Child Initiative | South Africa</p>
+    </footer>
+
+</body>
+
+</html>
